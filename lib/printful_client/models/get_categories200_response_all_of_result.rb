@@ -14,17 +14,13 @@ require 'date'
 require 'time'
 
 module Printful
-  class GetCategories200Response
-    # Response status code `200`
-    attr_accessor :code
-
-    attr_accessor :result
+  class GetCategories200ResponseAllOfResult
+    attr_accessor :categories
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
-        :'code' => :'code',
-        :'result' => :'result'
+        :'categories' => :'categories'
       }
     end
 
@@ -36,8 +32,7 @@ module Printful
     # Attribute type mapping.
     def self.openapi_types
       {
-        :'code' => :'Integer',
-        :'result' => :'GetCategories200ResponseAllOfResult'
+        :'categories' => :'Array<Category>'
       }
     end
 
@@ -47,34 +42,25 @@ module Printful
       ])
     end
 
-    # List of class defined in allOf (OpenAPI v3)
-    def self.openapi_all_of
-      [
-      :'Response200'
-      ]
-    end
-
     # Initializes the object
     # @param [Hash] attributes Model attributes in the form of hash
     def initialize(attributes = {})
       if (!attributes.is_a?(Hash))
-        fail ArgumentError, "The input argument (attributes) must be a hash in `Printful::GetCategories200Response` initialize method"
+        fail ArgumentError, "The input argument (attributes) must be a hash in `Printful::GetCategories200ResponseAllOfResult` initialize method"
       end
 
       # check to see if the attribute exists and convert string to symbol for hash key
       attributes = attributes.each_with_object({}) { |(k, v), h|
         if (!self.class.attribute_map.key?(k.to_sym))
-          fail ArgumentError, "`#{k}` is not a valid attribute in `Printful::GetCategories200Response`. Please check the name to make sure it's valid. List of attributes: " + self.class.attribute_map.keys.inspect
+          fail ArgumentError, "`#{k}` is not a valid attribute in `Printful::GetCategories200ResponseAllOfResult`. Please check the name to make sure it's valid. List of attributes: " + self.class.attribute_map.keys.inspect
         end
         h[k.to_sym] = v
       }
 
-      if attributes.key?(:'code')
-        self.code = attributes[:'code']
-      end
-
-      if attributes.key?(:'result')
-        self.result = attributes[:'result']
+      if attributes.key?(:'categories')
+        if (value = attributes[:'categories']).is_a?(Array)
+          self.categories = value
+        end
       end
     end
 
@@ -98,8 +84,7 @@ module Printful
     def ==(o)
       return true if self.equal?(o)
       self.class == o.class &&
-          code == o.code &&
-          result == o.result
+          categories == o.categories
     end
 
     # @see the `==` method
@@ -111,7 +96,7 @@ module Printful
     # Calculates hash code according to all attributes.
     # @return [Integer] Hash code
     def hash
-      [code, result].hash
+      [categories].hash
     end
 
     # Builds the object from hash

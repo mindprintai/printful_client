@@ -4054,9 +4054,14 @@
                 {
                   "properties": {
                     "result": {
-                      "type": "array",
-                      "items": {
-                        "$ref": "#/components/schemas/Category"
+                      "type": "object",
+                      "properties": {
+                        "categories": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/components/schemas/Category"
+                          }
+                        }
                       }
                     }
                   }
@@ -4078,7 +4083,12 @@
                 {
                   "properties": {
                     "result": {
-                      "$ref": "#/components/schemas/Category"
+                      "type": "object",
+                      "properties": {
+                        "category": {
+                          "$ref": "#/components/schemas/Category"
+                        }
+                      }
                     }
                   }
                 }

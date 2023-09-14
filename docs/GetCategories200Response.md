@@ -5,7 +5,7 @@
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **code** | **Integer** | Response status code &#x60;200&#x60; | [optional] |
-| **result** | [**Array&lt;Category&gt;**](Category.md) |  | [optional] |
+| **result** | [**GetCategories200ResponseAllOfResult**](GetCategories200ResponseAllOfResult.md) |  | [optional] |
 
 ## Example
 

@@ -37,7 +37,7 @@ module Printful
     def self.openapi_types
       {
         :'code' => :'Integer',
-        :'result' => :'Category'
+        :'result' => :'GetCategoryById200ResponseAllOfResult'
       }
     end
 
