@@ -18,7 +18,7 @@ docker run --rm -v ${PWD}:/local \
     --api-name-suffix 'Client' \
     --ignore-file-override "/local/.openapi-generator-ignore" \
     --additional-properties=gemName="printful_client" \
-    --additional-properties=gemVersion="1.0.1" \
+    --additional-properties=gemVersion="1.0.2" \
     --additional-properties=gemAuthor="Mindprint.ai" \
     --additional-properties=gemAuthorEmail="tech@mindprint.ai" \
     --additional-properties=gemSummary="A Ruby client for the Printful.com API" \
