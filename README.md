@@ -1,4 +1,4 @@
-# printful-client
+# printful_client
 
 A Ruby client for the [Printful.com API](https://developers.printful.com/docs/)
 generated using their OpenAPI/Swagger spec and the [OpenAPI Generator](https://openapi-generator.tech/) tool.
