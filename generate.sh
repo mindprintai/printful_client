@@ -21,8 +21,8 @@ docker run --rm -v ${PWD}:/local \
     --additional-properties=gemVersion="1.0.1" \
     --additional-properties=gemAuthor="Mindprint.ai" \
     --additional-properties=gemAuthorEmail="tech@mindprint.ai" \
-    --additional-properties=gemSummary="A Ruby client for the [Printful.com API" \
-    --additional-properties=gemDescription="A Ruby client for the [Printful.com API](https://developers.printful.com/docs/) generated using their OpenAPI/Swagger spec and the [OpenAPI Generator](https://openapi-generator.tech/) tool." \
+    --additional-properties=gemSummary="A Ruby client for the Printful.com API" \
+    --additional-properties=gemDescription="A Ruby client for the Printful.com API (https://developers.printful.com/docs/) generated using their OpenAPI/Swagger spec and the OpenAPI Generator (https://openapi-generator.tech/) tool." \
     --additional-properties=gemHomepage="https://github.com/mindprintai/printful_client" \
     --additional-properties=gemLicense="MIT" \
     --additional-properties=moduleName="Printful"

@@ -22,8 +22,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Mindprint.ai"]
   s.email       = ["tech@mindprint.ai"]
   s.homepage    = "https://github.com/mindprintai/printful_client"
-  s.summary     = "A Ruby client for the [Printful.com API"
-  s.description = "A Ruby client for the [Printful.com API](https://developers.printful.com/docs/) generated using their OpenAPI/Swagger spec and the [OpenAPI Generator](https://openapi-generator.tech/) tool."
+  s.summary     = "A Ruby client for the Printful.com API"
+  s.description = "A Ruby client for the Printful.com API (https://developers.printful.com/docs/) generated using their OpenAPI/Swagger spec and the OpenAPI Generator (https://openapi-generator.tech/) tool."
   s.license     = "MIT"
   s.required_ruby_version = ">= 2.7"
 
